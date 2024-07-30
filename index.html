@@ -6,7 +6,7 @@
     <title>Contributors</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background: linear-gradient(135deg, #FF6F00, #003366); /* Gradient background */
@@ -18,7 +18,7 @@
         }
 
         header {
-            background-color: rgba(0, 51, 102, 0.8); /* Semi-transparent background */
+            background-color: rgba(0, 51, 102, 0.9); /* Darker semi-transparent background */
             color: #ffffff;
             padding: 20px;
             text-align: center;
@@ -26,6 +26,7 @@
             justify-content: center;
             align-items: center;
             animation: slideIn 1s ease-out; /* Animation for header */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
         }
 
         header img {
@@ -35,25 +36,26 @@
 
         header h1 {
             margin: 0;
-            font-size: 24px;
+            font-size: 28px; /* Increased font size for header */
+            font-weight: bold;
         }
 
         .container {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 600px; /* Reduced max-width */
-            width: 100%;
+            background: #ffffff;
+            padding: 30px; /* Increased padding */
+            border-radius: 12px; /* More rounded corners */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+            max-width: 800px; /* Increased max-width */
+            width: 90%;
+            margin: 40px auto; /* Increased margin */
             text-align: center;
-            margin: 20px auto;
             flex: 1;
             animation: fadeInUp 2s ease-out; /* Animation for container */
         }
 
         h1 {
-            margin-bottom: 20px;
-            color: white;
+            margin-bottom: 30px; /* Increased margin */
+            color: #333;
         }
 
         .contributor-list {
@@ -62,14 +64,14 @@
             margin: 0;
             display: flex;
             flex-direction: column;
-            gap: 15px; /* Gap between list items */
+            gap: 20px; /* Increased gap between list items */
         }
 
         .contributor {
             background: #f9f9f9;
             border-radius: 8px;
-            padding: 15px; /* Reduced padding */
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            padding: 20px; /* Increased padding */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
             text-align: center;
             animation: fadeInUp 2s ease-out; /* Animation for contributors */
         }
@@ -77,24 +79,29 @@
         .contributor h2 {
             margin: 10px 0;
             color: #333;
+            font-size: 20px; /* Increased font size for contributor names */
+            font-weight: bold;
         }
 
         footer {
-            background-color: rgba(0, 51, 102, 0.8); /* Semi-transparent background */
+            background-color: rgba(0, 51, 102, 0.9); /* Darker semi-transparent background */
             color: #ffffff;
             padding: 20px;
             text-align: center;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Shadow on top */
         }
 
         .footer-links a {
             color: #ffffff;
             margin: 0 10px;
             text-decoration: none;
-            transition: color 0.3s;
+            font-weight: bold;
+            transition: color 0.3s, text-shadow 0.3s;
         }
 
         .footer-links a:hover {
             color: #FF6F00;
+            text-shadow: 0 0 5px rgba(255, 111, 0, 0.5); /* Subtle text shadow */
         }
 
         /* Keyframes for animations */
@@ -136,6 +143,7 @@
         <h1>Contributors</h1>
     </header>
     <main class="container">
+        <h1>Our Amazing Contributors</h1>
         <ul class="contributor-list">
             <li class="contributor">
                 <h2>Parikshit Sharma</h2>
@@ -143,9 +151,7 @@
             <li class="contributor">
                 <h2>Vedant Marathe</h2>
             </li>
-            <li class="contributor">
-                <h2>Sruthi Sivakumar</h2>
-            </li>
+            <!-- Add more contributors here -->
         </ul>
     </main>
     <footer>
