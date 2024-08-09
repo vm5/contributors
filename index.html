@@ -10,7 +10,7 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #FF6F00, #003366); /* Gradient background */
+            background: #ffffff; /* White background */
             color: #333;
             display: flex;
             flex-direction: column;
@@ -19,8 +19,8 @@
         }
 
         header {
-            background-color: #C0C0C0; /* Silver background */
-            color: #333; /* Dark text for contrast */
+            background-color: #000000; /* Black background */
+            color: #ffffff; /* White text for contrast */
             padding: 20px;
             text-align: center;
             display: flex;
@@ -28,7 +28,7 @@
             align-items: center;
             animation: slideIn 1s ease-out; /* Animation for header */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
-            border-bottom: 5px solid #003366; /* Border to distinguish from content */
+            border-bottom: 5px solid #FF6F00; /* Border to distinguish from content */
         }
 
         header img {
@@ -40,7 +40,7 @@
             margin: 0;
             font-size: 32px; /* Larger font size for header */
             font-weight: bold;
-            color: #003366; /* Dark color for text */
+            color: #FF6F00; /* Orange color for text */
         }
 
         .container {
@@ -54,13 +54,13 @@
             text-align: center;
             flex: 1;
             animation: fadeInUp 2s ease-out; /* Animation for container */
-            border: 2px solid #003366; /* Border to add distinction */
+            border: 2px solid #FF6F00; /* Border to add distinction */
             background: rgba(255, 255, 255, 0.9); /* Slightly transparent background for effect */
         }
 
         h1 {
             margin-bottom: 30px; /* Increased margin */
-            color: #003366; /* Dark color for text */
+            color: #FF6F00; /* Orange color for text */
         }
 
         .contributor-list {
@@ -79,7 +79,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
             text-align: center;
             animation: fadeInUp 2s ease-out; /* Animation for contributors */
-            border: 1px solid #003366; /* Border for distinction */
+            border: 1px solid #FF6F00; /* Border for distinction */
         }
 
         .contributor img {
@@ -91,8 +91,8 @@
         }
 
         footer {
-            background-color: #C0C0C0; /* Silver background */
-            color: #333; /* Dark text for contrast */
+            background-color: #000000; /* Black background */
+            color: #ffffff; /* White text for contrast */
             padding: 20px;
             text-align: center;
             position: relative;
@@ -101,7 +101,7 @@
         }
 
         .footer-links a {
-            color: #333; /* Dark text for contrast */
+            color: #ffffff; /* White text for contrast */
             margin: 0 10px;
             text-decoration: none;
             transition: color 0.3s;
@@ -114,7 +114,7 @@
         .contributor h2 {
             margin: 10px 0; /* Reduced margin for name */
             font-size: 24px; /* Font size for names */
-            color: #003366; /* Dark color for names */
+            color: #FF6F00; /* Orange color for names */
         }
 
         .contributor p {
@@ -220,27 +220,25 @@
 </head>
 <body>
     <header>
-        <img src="logo-removebg-preview (1).png" alt="LOGO" />
+        <img src="/nucleus.png" alt="LOGO" />
         <h1>Our Contributors</h1>
     </header>
     <div class="container">
         <ul class="contributor-list">
             <li class="contributor">
-                <div class="profile-icon">
-                    <i class="fas fa-user"></i>
-                </div>
+                <img src="parikshit.png" alt="Parikshit Sharma">
                 <h2>Parikshit Sharma</h2>
+               
             </li>
             <li class="contributor">
-                <div class="profile-icon">
-                    <i class="fas fa-user"></i>
-                </div>
+                <img src="pfp.png" alt="Vedant Marathe">
                 <h2>Vedant Marathe</h2>
+               
             </li>
         </ul>
     </div>
     <footer>
-        <p>&copy; <span id="year"></span> connectPES. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> nucleusFUSION. All rights reserved.</p>
     </footer>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
